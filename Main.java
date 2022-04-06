@@ -19,16 +19,14 @@ public class Main {
 					+ "1) Login\n 2) Cadastro\n 3) Informações do Sistema\n 4) Sair\n\n Opção: "));
 			
 		} catch (NumberFormatException e) { // Verifica se o dado de entrada � um numero inteiro 
-			
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 					+ "\n Você deve entrar com um número INTEIRO!"
 					+ "\n Por favor tente novamente!");
-			Main.Menu();
-			}
+			Main.Menu(); }
 
 			switch (op) {
-			case 1: Login(); break;
-			case 2: Cadastro();break;
+			case 1: LoginCadastro.Login(); break;
+			case 2: LoginCadastro.Cadastro();break;
 			case 3: Info(); break;
 			case 4: System.exit(0); break;
 			
@@ -38,7 +36,7 @@ public class Main {
 	}
 
 	static void Login() {
-		JOptionPane.showMessageDialog(null, " Login");
+		JOptionPane.showMessageDialog(null, " Cadastro");
 		Main.Menu();
 	}
 

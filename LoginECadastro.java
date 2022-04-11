@@ -3,7 +3,7 @@ package logincadastro;
 import java.util.*;
 import javax.swing.*;
 
-public class LoginCadastro {
+public class LoginECadastro {
     
     Scanner ler = new Scanner(System.in);
 
@@ -21,22 +21,11 @@ public class LoginCadastro {
 			        Login(); }
                        
             switch (op) {
-                case 1: LoginCliente(); break;
-                case 2: LoginComercio(); break;
+                case 1: ClienteClass.login(); break;
+                case 2: ComercioClass.login(); break;
                 case 3: Main.Menu(); break;
                 default: Login(); break;
-            }
-                
-    }
-
-    static void LoginCliente() {
-        JOptionPane.showMessageDialog(null, " Login Cliente");
-        Login();
-    }
-
-    static void LoginComercio() {
-        JOptionPane.showMessageDialog(null, " Login Comercio");
-        Login();
+            } 
     }
 
     static void Cadastro() {
@@ -53,21 +42,11 @@ public class LoginCadastro {
 			        Cadastro(); }
                        
             switch (op) {
-                case 1: CadastroCliente(); break;
-                case 2: CadastroComercio(); break;
+                case 1: ClienteClass.cadastro(); break;
+                case 2: ComercioClass.cadastro(); break;
                 case 3: Main.Menu(); break;
                 default: Cadastro(); break;
-            }
-                
+            } 
     }
 
-    static void CadastroCliente() {
-        JOptionPane.showMessageDialog(null, " Cadastro Cliente");
-        Login();
-    }
-
-    static void CadastroComercio() {
-        JOptionPane.showMessageDialog(null, " Cadastro Comercio");
-        Login();
-    }
 }

@@ -25,8 +25,8 @@ public class Main {
 			Main.Menu(); }
 
 			switch (op) {
-			case 1: LoginCadastro.Login(); break;
-			case 2: LoginCadastro.Cadastro();break;
+			case 1: LoginECadastro.Login(); break;
+			case 2: LoginECadastro.Cadastro(); break;
 			case 3: Info(); break;
 			case 4: System.exit(0); break;
 			
@@ -35,18 +35,9 @@ public class Main {
 			
 	}
 
-	static void Login() {
-		JOptionPane.showMessageDialog(null, " Cadastro");
-		Main.Menu();
-	}
-
-	static void Cadastro() {
-		JOptionPane.showMessageDialog(null, " Cadastro");
-		Main.Menu();
-	}
-
 	static void Info() {
-		JOptionPane.showMessageDialog(null, " Informações do Sistema");
+		ClienteClass.print();
+		ComercioClass.print();
 		Main.Menu();
 	}
 

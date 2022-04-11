@@ -18,7 +18,7 @@ public class Main {
 					+ "ESCOLHA A OPÇÃO\n ----------------------------------------\n "
 					+ "1) Login\n 2) Cadastro\n 3) Informações do Sistema\n 4) Sair\n\n Opção: "));
 			
-		} catch (NumberFormatException e) { // Verifica se o dado de entrada � um numero inteiro 
+		} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 					+ "\n Você deve entrar com um número INTEIRO!"
 					+ "\n Por favor tente novamente!");

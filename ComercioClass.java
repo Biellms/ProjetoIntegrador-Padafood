@@ -53,11 +53,19 @@ public class ComercioClass {
 
             Main.Menu(); // TROCAR POR MENU COMERCIO
 
-		} else { op = Integer.parseInt(JOptionPane.showInputDialog("\n EMAIL E SENHA INCORRETOS!!\n"
+		} else { 
+				try {
+					op = Integer.parseInt(JOptionPane.showInputDialog("\n EMAIL E SENHA INCORRETOS!!\n"
 				+ "\n 1) Tentar novamente"
 				+ "\n 2) Voltar"
 				+ "\n\n Opção:"));
-			if (op == 1) { ComercioClass.login(); } else { LoginECadastro.Login(); }
+					if (op == 1) { ComercioClass.login(); } else { LoginECadastro.Login(); }
+
+				} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
+					JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
+							+ "\n Você deve entrar com um número INTEIRO!"
+							+ "\n Por favor tente novamente!");
+					ComercioClass.login(); }
 		}
 	}
 		

@@ -3,11 +3,13 @@ package logincadastro;
 import java.util.*;
 import javax.swing.*;
 
+import main.Main;
+
 public class LoginECadastro {
     
     Scanner ler = new Scanner(System.in);
 
-    static void Login() {
+    public static void Login() {
         
         int op = 0;
 
@@ -28,7 +30,7 @@ public class LoginECadastro {
             } 
     }
 
-    static void Cadastro() {
+    public static void Cadastro() {
         
         int op = 0;
 

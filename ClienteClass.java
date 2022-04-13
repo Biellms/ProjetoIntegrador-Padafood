@@ -3,6 +3,9 @@ package logincadastro;
 import java.util.*;
 import javax.swing.*;
 
+import interfaceusuario.MenuCliente;
+// import main.Main;
+
 public class ClienteClass {
 
 	/* Atributos Static para não precisar criar um Objeto, e não 
@@ -21,7 +24,7 @@ public class ClienteClass {
 	}
 	
 	// Métodos
-	static void cadastro() {	// Implementa dados aos Atributos da PessoaCadastro
+	public static void cadastro() {	// Implementa dados aos Atributos da PessoaCadastro
 		String a, b, c, d;
 
 		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
@@ -34,10 +37,10 @@ public class ClienteClass {
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!"
 										 + "\n\n SEJA BEM VINDO "+getNome()+"!!\n");
 
-		Main.Menu(); // TROCAR POR MENU CLIENTE
+		MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 	}
 	
-	static void login() {	// Compara Strings Atributos com as String do método para validar login
+	public static void login() {	// Compara Strings Atributos com as String do método para validar login
 		String a, b;
 		int op;
 		
@@ -49,7 +52,7 @@ public class ClienteClass {
 		if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
 		JOptionPane.showMessageDialog(null,"\n SEJA BEM VINDO "+getNome()+"!!");
 
-			Main.Menu(); // TROCAR POR MENU CLIENTE
+			MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 
 		} else { 
 				try {
@@ -67,7 +70,7 @@ public class ClienteClass {
 		}
 	}
 		
-	static void print() {
+	public static void print() {
 		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
 				+ " INFORMAÇÕES CLIENTE\n ---------------------------------------- "
 				+ "\n Nome: "+getNome()+""
@@ -75,10 +78,10 @@ public class ClienteClass {
 				+ "\n Senha: "+getSenha()+""		
 				+ "\n Telefone: "+getTelefone()+"\n\n");
 
-				// Main.Menu(); RETORNAR MENU CLIENTE
+				MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 	}
 	
-	// Get e Set
+	// Getters and Setters
 	public static String getNome() { return nome; }
 
 	public static void setNome(String nome) { ClienteClass.nome = nome; }

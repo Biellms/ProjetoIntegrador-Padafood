@@ -3,6 +3,8 @@ package logincadastro;
 import java.util.*;
 import javax.swing.*;
 
+import main.Main;
+
 public class ComercioClass {
     
     /* Atributos Static para não precisar criar um Objeto, e não 
@@ -22,7 +24,7 @@ public class ComercioClass {
     }
 
     // Métodos
-    static void cadastro() {	// Implementa dados aos Atributos da PessoaCadastro
+    public static void cadastro() {	// Implementa dados aos Atributos da PessoaCadastro
 		String a, b, c, d, e;
 
 		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
@@ -39,7 +41,7 @@ public class ComercioClass {
 		Main.Menu(); // TROCAR POR MENU COMERCIO
 	}
 	
-	static void login() {	// Compara Strings Atributos com as String do método para validar login
+	public static void login() {	// Compara Strings Atributos com as String do método para validar login
 		String a, b;
 		int op;
 		
@@ -69,7 +71,7 @@ public class ComercioClass {
 		}
 	}
 		
-	static void print() {
+	public static void print() {
 		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
 				+ " INFORMAÇÕES COMÉRCIO\n ---------------------------------------- "
 				+ "\n Nome: "+getNome()+""

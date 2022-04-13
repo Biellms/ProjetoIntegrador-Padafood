@@ -1,13 +1,15 @@
-package logincadastro;
+package main;
 
-import java.awt.*;
-import java.net.*;
+// import java.awt.*;
+// import java.net.*;
 import javax.swing.*;
-import javax.swing.plaf.FontUIResource;
+// import javax.swing.plaf.FontUIResource;
+
+import logincadastro.LoginECadastro;
 
 public class Main {
 	
-	static void Menu () {
+	public static void Menu () {
 		
 		int op = 0;
 		
@@ -25,19 +27,17 @@ public class Main {
 			Main.Menu(); }
 
 			switch (op) {
-			case 1: LoginECadastro.Login(); break;
-			case 2: LoginECadastro.Cadastro(); break;
-			case 3: Info(); break;
-			case 4: System.exit(0); break;
-			
-			default: JOptionPane.showMessageDialog(null,"\n Opcao Inválida!!"); Main.Menu(); break;
+				case 1: LoginECadastro.Login(); break;
+				case 2: LoginECadastro.Cadastro(); break;
+				case 3: Info(); break;
+				case 4: System.exit(0); break;
+				default: JOptionPane.showMessageDialog(null,"\n Opcao Inválida!!"); Main.Menu(); break;
 			}
 			
 	}
 
-	static void Info() {
-		ClienteClass.print();
-		ComercioClass.print();
+	public static void Info() {
+		JOptionPane.showMessageDialog(null, "Informações");
 		Main.Menu();
 	}
 

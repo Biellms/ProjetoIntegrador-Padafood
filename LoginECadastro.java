@@ -14,7 +14,14 @@ public class LoginECadastro {
         int op = 0;
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog(" 1) Login Cliente\n 2) Login Comércio\n 3) Voltar\n\n Opção:"));
+            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+                + " Escolha o tipo de Login\n"
+                + " ----------------------------------------\n"
+                + " 1) Cliente\n"
+                + " 2) Comércio\n"
+                + " ----------------------------------------\n"
+                + " 3) Voltar\n"
+                + "\n Opção:"));
 
         } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
@@ -35,7 +42,14 @@ public class LoginECadastro {
         int op = 0;
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog(" 1) Cadastro Cliente\n 2) Cadastro Comércio\n 3) Voltar\n\n Opção:"));
+            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+                + " Escolha o tipo de Cadastro\n"
+                + " ----------------------------------------\n"
+                + " 1) Cliente\n"
+                + " 2) Comércio\n"
+                + " ----------------------------------------\n"
+                + " 3) Voltar\n"
+                + "\n Opção:"));
 
         } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"

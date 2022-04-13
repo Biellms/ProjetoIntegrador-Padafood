@@ -22,7 +22,7 @@ public class MenuCliente {
                     + " 2) Carrinho\n"
                     + " 3) Informações do Usuário\n"
                     + " ----------------------------------------\n"
-                    + " 4) Voltar\n"
+                    + " 4) Sair\n"
                     + "\n Opção:"));
             } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro
                 
@@ -35,7 +35,7 @@ public class MenuCliente {
             switch (op) {
                 case 1: Comprar(); break;
                 case 2: Carrinho(); break;
-                case 3: Info(); break;
+                case 3: ClienteClass.print(); break;
                 case 4: Main.Menu(); break;
                 default: break;
             }

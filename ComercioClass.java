@@ -1,9 +1,10 @@
-package logincadastro;
+package entities;
 
 import java.util.*;
 import javax.swing.*;
 
-import main.Main;
+import interfaces.LoginECadastro;
+import interfaces.MenuComercio;
 
 public class ComercioClass {
     
@@ -38,7 +39,7 @@ public class ComercioClass {
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!"
 										 + "\n\n SEJA BEM VINDO "+getNome()+"!!\n");
 
-		Main.Menu(); // TROCAR POR MENU COMERCIO
+		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}
 	
 	public static void login() {	// Compara Strings Atributos com as String do método para validar login
@@ -53,7 +54,7 @@ public class ComercioClass {
 		if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
 		JOptionPane.showMessageDialog(null,"\n SEJA BEM VINDO "+getNome()+"!!");
 
-            Main.Menu(); // TROCAR POR MENU COMERCIO
+		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 
 		} else { 
 				try {
@@ -80,7 +81,7 @@ public class ComercioClass {
 				+ "\n Endereço: "+getEndereco()+""	
 				+ "\n Telefone: "+getTelefone()+"\n\n");
 
-				// Main.Menu(); RETORNAR MENU COMERCIO
+				MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}
 
     // Getters and Setters

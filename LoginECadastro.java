@@ -1,8 +1,10 @@
-package logincadastro;
+package interfaces;
 
 import java.util.*;
 import javax.swing.*;
 
+import entities.ClienteClass;
+import entities.ComercioClass;
 import main.Main;
 
 public class LoginECadastro {

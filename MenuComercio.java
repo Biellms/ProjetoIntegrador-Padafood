@@ -3,11 +3,11 @@ package interfaces;
 import java.util.*;
 import javax.swing.*;
 
-import entities.ClienteClass;
+import entities.ComercioClass;
 import main.Main;
 
-public class MenuCliente {
-    
+public class MenuComercio {
+
     Scanner ler = new Scanner(System.in);
 
     public static void Menu() {
@@ -16,10 +16,10 @@ public class MenuCliente {
 
         try {
             op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
-                    + " Cliente "+ClienteClass.getNome()+"\n"
+                    + " Comércio "+ComercioClass.getNome()+"\n"
                     + " ----------------------------------------\n"
-                    + " 1) Comprar\n"
-                    + " 2) Carrinho\n"
+                    + " 1) Cadastrar Produtos\n"
+                    + " 2) Ver Produtos\n"
                     + " 3) Informações do Usuário\n"
                     + " ----------------------------------------\n"
                     + " 4) Sair\n"
@@ -29,24 +29,24 @@ public class MenuCliente {
                 JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
                         + "\n Você deve entrar com um número INTEIRO!"
                         + "\n Por favor tente novamente!");
-                MenuCliente.Menu();
+                        MenuComercio.Menu();
             }
 
             switch (op) {
-                case 1: Comprar(); break;
-                case 2: Carrinho(); break;
-                case 3: ClienteClass.print(); break;
+                case 1: cadastrarProduto(); break;
+                case 2: verProdutos(); break;
+                case 3: ComercioClass.print(); break;
                 case 4: Main.Menu(); break;
                 default: break;
             }
     }
 
-    public static void Comprar() {
+    public static void cadastrarProduto() {
         JOptionPane.showMessageDialog(null, " Menu Comprar");
         MenuCliente.Menu();
     }
 
-    public static void Carrinho() {
+    public static void verProdutos() {
         JOptionPane.showMessageDialog(null, " Menu Carrinho");
         MenuCliente.Menu();
     }

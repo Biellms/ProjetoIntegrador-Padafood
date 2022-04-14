@@ -1,11 +1,11 @@
 package main;
 
-// import java.awt.*;
+import java.awt.*;
 // import java.net.*;
 import javax.swing.*;
-// import javax.swing.plaf.FontUIResource;
+import javax.swing.plaf.*;
 
-import logincadastro.LoginECadastro;
+import interfaces.LoginECadastro;
 
 public class Main {
 	
@@ -33,7 +33,6 @@ public class Main {
 				case 4: System.exit(0); break;
 				default: JOptionPane.showMessageDialog(null,"\n Opcao Inválida!!"); Main.Menu(); break;
 			}
-			
 	}
 
 	public static void Info() {
@@ -44,7 +43,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		
 		// // Alterando Fonte do JOptionPane
-		// UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.BOLD, 14)));
+		UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.PLAIN , 16)));
 		
 		// // Gif no JOptionPane
 		// final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
@@ -56,5 +55,4 @@ public class Main {
 			
 		Main.Menu();
 	}
-	
 }

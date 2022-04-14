@@ -1,10 +1,10 @@
-package logincadastro;
+package entities;
 
 import java.util.*;
 import javax.swing.*;
 
-import interfaceusuario.MenuCliente;
-// import main.Main;
+import interfaces.LoginECadastro;
+import interfaces.MenuCliente;
 
 public class ClienteClass {
 

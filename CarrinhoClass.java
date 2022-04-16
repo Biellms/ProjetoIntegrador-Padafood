@@ -7,17 +7,17 @@ import principal.Game;
 public class CarrinhoClass {
     
     // Atributos
-    private ArrayList <Game> lista = new ArrayList <>();
+    private ArrayList <ProdutoClass> lista = new ArrayList <>();
 	
     // Constructor
 	public CarrinhoClass() { }
 
     // Getters And Setters
-	public ArrayList<Game> getLista() {
+	public ArrayList<ProdutoClass> getLista() {
 		return lista;
 	}
 
-	public void setLista(ArrayList<Game> lista) {
+	public void setLista(ArrayList<ProdutoClass> lista) {
 		this.lista = lista;
 	}
 }

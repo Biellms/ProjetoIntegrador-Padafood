@@ -40,7 +40,7 @@ public class ClienteClass {
 		MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 	}
 	
-	public static void login() {	// Compara Strings Atributos com as String do método para validar login
+	public static void login() {	// Compara Strings do Objeto com as Strings do método para validar login
 		String a, b;
 		int op;
 		
@@ -57,9 +57,9 @@ public class ClienteClass {
 		} else { 
 				try {
 					op = Integer.parseInt(JOptionPane.showInputDialog("\n EMAIL E SENHA INCORRETOS!!\n"
-				+ "\n 1) Tentar novamente"
-				+ "\n 2) Voltar"
-				+ "\n\n Opção:"));
+						+ "\n 1) Tentar novamente"
+						+ "\n 2) Voltar"
+						+ "\n\n Opção:"));
 					if (op == 1) { ClienteClass.login(); } else { LoginECadastro.Login(); }
 
 				} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
@@ -71,14 +71,14 @@ public class ClienteClass {
 	}
 		
 	public static void print() {
-		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
-				+ " INFORMAÇÕES CLIENTE\n ---------------------------------------- "
-				+ "\n Nome: "+getNome()+""
-				+ "\n Email: "+getEmail()+""
-				+ "\n Senha: "+getSenha()+""		
-				+ "\n Telefone: "+getTelefone()+"\n\n");
+		JOptionPane.showMessageDialog(null,"\n -------------------------------------------\n"
+			+ " INFORMAÇÕES CLIENTE\n ------------------------------------------- "
+			+ "\n Nome: "+getNome()+""
+			+ "\n Email: "+getEmail()+""
+			+ "\n Senha: "+getSenha()+""		
+			+ "\n Telefone: "+getTelefone()+"\n\n");
 
-				MenuCliente.Menu(); // RETORNAR MENU CLIENTE
+		MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 	}
 	
 	// Getters and Setters

@@ -3,6 +3,7 @@ package interfaces;
 import java.util.*;
 import javax.swing.*;
 
+import entities.CadastroProduto;
 import entities.ComercioClass;
 import main.Main;
 
@@ -16,20 +17,21 @@ public class MenuComercio {
 
         try {
             op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
-                    + " Comércio "+ComercioClass.getNome()+"\n"
-                    + " ----------------------------------------\n"
-                    + " 1) Cadastrar Produtos\n"
-                    + " 2) Ver Produtos\n"
-                    + " 3) Informações do Usuário\n"
-                    + " ----------------------------------------\n"
-                    + " 4) Sair\n"
-                    + "\n Opção:"));
+                + " Comércio "+ComercioClass.getNome()+"\n"
+                + " ----------------------------------------\n"
+                + " 1) Cadastrar Produto\n"
+                + " 2) Estoque\n"
+                + " 3) Informações do Usuário\n"
+                + " ----------------------------------------\n"
+                + " 4) Sair\n"
+                + "\n Opção:"));
+
             } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro
-                
                 JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
-                        + "\n Você deve entrar com um número INTEIRO!"
-                        + "\n Por favor tente novamente!");
-                        MenuComercio.Menu();
+                    + "\n Você deve entrar com um número INTEIRO!"
+                    + "\n Por favor tente novamente!");
+
+                MenuComercio.Menu(); // RETORNA MENU COMERCIO
             }
 
             switch (op) {
@@ -42,12 +44,15 @@ public class MenuComercio {
     }
 
     public static void cadastrarProduto() {
-        JOptionPane.showMessageDialog(null, " Menu Comprar");
-        MenuCliente.Menu();
+        CadastroProduto.cadastrar();
     }
 
     public static void verProdutos() {
-        JOptionPane.showMessageDialog(null, " Menu Carrinho");
-        MenuCliente.Menu();
+        JOptionPane.showMessageDialog(null," ----------------------------------------\n"
+            + " ESTOQUE \n"
+            + " ----------------------------------------\n"
+            + CadastroProduto.print());
+
+        MenuComercio.Menu(); // RETORNA MENU COMERCIO
     }
 }

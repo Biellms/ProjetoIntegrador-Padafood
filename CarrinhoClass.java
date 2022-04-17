@@ -2,8 +2,6 @@ package entities;
 
 import java.util.*;
 
-import principal.Game;
-
 public class CarrinhoClass {
     
     // Atributos

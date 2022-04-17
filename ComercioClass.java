@@ -42,7 +42,7 @@ public class ComercioClass {
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}
 	
-	public static void login() {	// Compara Strings Atributos com as String do método para validar login
+	public static void login() {	// Compara Strings do Objeto com as Strings do método para validar login
 		String a, b;
 		int op;
 		
@@ -59,29 +59,30 @@ public class ComercioClass {
 		} else { 
 				try {
 					op = Integer.parseInt(JOptionPane.showInputDialog("\n EMAIL E SENHA INCORRETOS!!\n"
-				+ "\n 1) Tentar novamente"
-				+ "\n 2) Voltar"
-				+ "\n\n Opção:"));
+						+ "\n 1) Tentar novamente"
+						+ "\n 2) Voltar"
+						+ "\n\n Opção:"));
 					if (op == 1) { ComercioClass.login(); } else { LoginECadastro.Login(); }
 
 				} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 					JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 							+ "\n Você deve entrar com um número INTEIRO!"
 							+ "\n Por favor tente novamente!");
+
 					ComercioClass.login(); }
 		}
 	}
 		
 	public static void print() {
-		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
-				+ " INFORMAÇÕES COMÉRCIO\n ---------------------------------------- "
-				+ "\n Nome: "+getNome()+""
-				+ "\n Email: "+getEmail()+""
-				+ "\n Senha: "+getSenha()+""	
-				+ "\n Endereço: "+getEndereco()+""	
-				+ "\n Telefone: "+getTelefone()+"\n\n");
+		JOptionPane.showMessageDialog(null,"\n -------------------------------------------\n"
+			+ " INFORMAÇÕES COMÉRCIO\n ------------------------------------------- "
+			+ "\n Nome: "+getNome()+""
+			+ "\n Email: "+getEmail()+""
+			+ "\n Senha: "+getSenha()+""	
+			+ "\n Endereço: "+getEndereco()+""	
+			+ "\n Telefone: "+getTelefone()+"\n\n");
 
-				MenuComercio.Menu(); // RETORNA MENU COMERCIO
+		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}
 
     // Getters and Setters

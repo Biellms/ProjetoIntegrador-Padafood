@@ -3,7 +3,7 @@ package interfaces;
 import java.util.*;
 import javax.swing.*;
 
-import entities.CarrinhoClass;
+import entities.CadastroProduto;
 import entities.ClienteClass;
 
 public class MenuCliente {
@@ -33,7 +33,7 @@ public class MenuCliente {
             }
 
             switch (op) {
-                case 1: Comprar(); break;
+                case 1: comprarProduto(); break;
                 case 2: Carrinho(); break;
                 case 3: ClienteClass.print(); break;
                 case 4: Main.Menu(); break;
@@ -41,17 +41,16 @@ public class MenuCliente {
             }
     }
 
-    public static void Comprar() {
-        JOptionPane.showMessageDialog(null, " Menu Comprar");
-        CarrinhoClass.Comprar();
+    public static void comprarProduto() {
+        CadastroProduto.Comprar();
     }
 
     public static void Carrinho() {
-        JOptionPane.showMessageDialog(null, " Menu Carrinho");
-        MenuCliente.Menu();
-    }
+        JOptionPane.showMessageDialog(null," ----------------------------------------\n"
+            + " CARRINHO \n"
+            + " ----------------------------------------\n"
+            + CadastroProduto.verCarrinho());
 
-    public static void main(String[] args) {
-        MenuCliente.Menu();
+        MenuCliente.Menu(); // RETORNA MENU CLIENTE
     }
 }

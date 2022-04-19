@@ -37,7 +37,7 @@ public class ComercioClass {
         e = JOptionPane.showInputDialog(" Endereço: "); setEndereco(e);
 		status = true;
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!"
-										 + "\n\n SEJA BEM VINDO "+getNome()+"!!\n");
+										 + "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}
@@ -52,7 +52,7 @@ public class ComercioClass {
 		b = JOptionPane.showInputDialog(" Senha: ");
 		
 		if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
-		JOptionPane.showMessageDialog(null,"\n SEJA BEM VINDO "+getNome()+"!!");
+		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!");
 
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 
@@ -62,14 +62,14 @@ public class ComercioClass {
 						+ "\n 1) Tentar novamente"
 						+ "\n 2) Voltar"
 						+ "\n\n Opção:"));
-					if (op == 1) { ComercioClass.login(); } else { LoginECadastro.Login(); }
+					if (op == 1) { login(); } else { LoginECadastro.Login(); }
 
 				} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 					JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 							+ "\n Você deve entrar com um número INTEIRO!"
 							+ "\n Por favor tente novamente!");
 
-					ComercioClass.login(); }
+					login(); }
 		}
 	}
 		

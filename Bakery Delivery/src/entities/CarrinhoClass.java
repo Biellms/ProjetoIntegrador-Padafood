@@ -1,29 +1,21 @@
 package entities;
 
 import java.util.*;
-import javax.swing.*;
-
-import interfaces.MenuCliente;
 
 public class CarrinhoClass {
     
     // Atributos
-	static ArrayList<ProdutoClass> carrinho = new EstoqueClass().getLista();
-	static String textoEstoque = "";
+    private ArrayList <ProdutoClass> lista = new ArrayList <>();
 
-	// Métodos
-	public static void Comprar() {
-		int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
-			+ " Produtos\n----------------------------------------\n"
-			+ CadastroProduto.Print()
-			+ "----------------------------------------\n"
-			+ "5) Voltar\n\n"
-			+ "Opção:"));
+    // Constructor
+    public CarrinhoClass() { }
 
-			if (op == 5) {
-				MenuCliente.Menu();
-			} else {
-				MenuCliente.Menu();
-			}
-	}
+    // Getters and Setters
+    public ArrayList<ProdutoClass> getLista() {
+        return lista;
+    }
+
+    public void setLista(ArrayList<ProdutoClass> lista) {
+        this.lista = lista;
+    }
 }

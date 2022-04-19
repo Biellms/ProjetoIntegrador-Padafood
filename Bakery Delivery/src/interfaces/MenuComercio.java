@@ -35,7 +35,7 @@ public class MenuComercio {
 
             switch (op) {
                 case 1: cadastrarProduto(); break;
-                case 2: verProdutos(); break;
+                case 2: Estoque(); break;
                 case 3: ComercioClass.print(); break;
                 case 4: Main.Menu(); break;
                 default: break;
@@ -46,11 +46,11 @@ public class MenuComercio {
         CadastroProduto.Cadastrar();
     }
 
-    public static void verProdutos() {
+    public static void Estoque() {
         JOptionPane.showMessageDialog(null," ----------------------------------------\n"
             + " ESTOQUE \n"
             + " ----------------------------------------\n"
-            + CadastroProduto.Print());
+            + CadastroProduto.verEstoque());
 
         MenuComercio.Menu(); // RETORNA MENU COMERCIO
     }

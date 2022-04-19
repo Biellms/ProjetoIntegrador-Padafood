@@ -3,6 +3,7 @@ package entities;
 // import java.net.*;
 import javax.swing.*;
 
+import interfaces.MenuCliente;
 import interfaces.MenuComercio;
 
 import java.util.*;
@@ -11,10 +12,14 @@ public class CadastroProduto {
 
     // Atributos
     static EstoqueClass estoque = new EstoqueClass();
+    static CarrinhoClass lista = new CarrinhoClass();
+    static ArrayList<ProdutoClass> carrinho = lista.getLista();
     static ArrayList<ProdutoClass> produto = estoque.getLista();
     static String textoEstoque = "";
+    static String textoCarrinho = "";
 
     // Métodos
+    // Estoque
     public static void Cadastrar() {
 
         String nome = JOptionPane.showInputDialog(" CADASTRAR PRODUTO\n\n Nome: ");
@@ -23,12 +28,12 @@ public class CadastroProduto {
         produto.add(new ProdutoClass(nome, preco)); // ADICIONA PRODUTO
         
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog("\n CADASTRAR COM SUCESSO!\n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog("\n CADASTRADO COM SUCESSO!\n"
                 + "\n 1) Cadastrar Novamente"
                 + "\n 2) Voltar"
                 + "\n\n Opção:"));
-            if (op == 1) { CadastroProduto.Cadastrar(); } 
-            else { MenuComercio.Menu(); } // RETORNA MENU COMERCIO
+            if (op == 1) { Cadastrar(); }
+            else { MenuCliente.Menu(); } // RETORNA MENU COMERCIO
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
@@ -39,16 +44,58 @@ public class CadastroProduto {
         }
     }
 
-    public static String Print() {
+    public static String verEstoque() {
         if (produto.isEmpty()) {
             textoEstoque = " ESTOQUE VAZIO!\n\n";
         } else {
             textoEstoque = "";
             for (int i = 0; i < produto.size(); i++) {
-                textoEstoque += " "+(i+1)+") "+produto.get(i).getNome()+" | "+produto.get(i).formatarMoeda()+"\n\n";
+                textoEstoque += " "+(i+1)+") "+produto.get(i).getNome()+" | "+produto.get(i).formatarMoeda()+"\n";
             }
         }
 
         return textoEstoque;
+    }
+
+    // Carrinho
+    public static void Comprar() {
+        int back = CadastroProduto.produto.size() + 1;
+
+        try {
+            int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
+			+ " Comércio: "+ComercioClass.getNome()
+			+ "\n----------------------------------------\n"
+			+ CadastroProduto.verEstoque()
+			+ "----------------------------------------\n"
+			+ " "+back+") Voltar\n\n"
+			+ "Selecione a opção que deseje comprar:     "));
+
+            if (op == back) {
+                MenuCliente.Menu();
+            } else {
+                op -= 1;
+                carrinho.add(produto.get(op));
+                MenuCliente.Menu();
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
+                + "\n Você deve entrar com um número INTEIRO!"
+                + "\n Por favor tente novamente!");
+
+            Comprar(); // RETORNA MENU COMPRAR
+        }
+    }
+
+    public static String verCarrinho() {
+        if (carrinho.isEmpty()) {
+            textoCarrinho = " CARRINHO VAZIO!\n\n";
+        } else {
+            textoCarrinho = "";
+            for (int i = 0; i < carrinho.size(); i++) {
+                textoCarrinho += " "+(i+1)+") "+carrinho.get(i).getNome()+" | "+carrinho.get(i).formatarMoeda()+"\n";
+            }
+        }
+
+        return textoCarrinho;
     }
 }

@@ -3,7 +3,7 @@ package interfaces;
 import java.util.*;
 import javax.swing.*;
 
-import entities.CadastroProduto;
+import entities.EstoqueCarrinho;
 import entities.ClienteClass;
 
 public class MenuCliente {
@@ -42,15 +42,18 @@ public class MenuCliente {
     }
 
     public static void comprarProduto() {
-        CadastroProduto.Comprar();
+        EstoqueCarrinho.Comprar();
     }
 
     public static void Carrinho() {
         JOptionPane.showMessageDialog(null," ----------------------------------------\n"
             + " CARRINHO \n"
             + " ----------------------------------------\n"
-            + CadastroProduto.verCarrinho());
+            + EstoqueCarrinho.verCarrinho()
+            + " ----------------------------------------\n"
+            + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n");
 
         MenuCliente.Menu(); // RETORNA MENU CLIENTE
     }
+
 }

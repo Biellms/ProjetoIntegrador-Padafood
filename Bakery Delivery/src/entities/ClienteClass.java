@@ -34,7 +34,7 @@ public class ClienteClass {
 		c = JOptionPane.showInputDialog(" Senha: "); setSenha(c);
 		d = JOptionPane.showInputDialog(" Telefone: "); setTelefone(d);
 		status = true;
-		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!"
+		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!    "
 										 + "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 
 		MenuCliente.Menu(); // RETORNAR MENU CLIENTE
@@ -50,7 +50,7 @@ public class ClienteClass {
 		b = JOptionPane.showInputDialog(" Senha: ");
 		
 		if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
-		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!");
+		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!    ");
 
 			MenuCliente.Menu(); // RETORNAR MENU CLIENTE
 

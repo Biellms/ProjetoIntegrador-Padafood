@@ -36,7 +36,7 @@ public class ComercioClass {
 		d = JOptionPane.showInputDialog(" Telefone: "); setTelefone(d);
         e = JOptionPane.showInputDialog(" Endereço: "); setEndereco(e);
 		status = true;
-		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!"
+		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!    "
 										 + "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
@@ -52,7 +52,7 @@ public class ComercioClass {
 		b = JOptionPane.showInputDialog(" Senha: ");
 		
 		if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
-		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!");
+		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!    ");
 
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 

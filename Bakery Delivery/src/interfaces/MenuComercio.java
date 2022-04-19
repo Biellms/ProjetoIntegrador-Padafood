@@ -3,7 +3,7 @@ package interfaces;
 import java.util.*;
 import javax.swing.*;
 
-import entities.CadastroProduto;
+import entities.EstoqueCarrinho;
 import entities.ComercioClass;
 
 public class MenuComercio {
@@ -43,14 +43,14 @@ public class MenuComercio {
     }
 
     public static void cadastrarProduto() {
-        CadastroProduto.Cadastrar();
+        EstoqueCarrinho.Cadastrar();
     }
 
     public static void Estoque() {
         JOptionPane.showMessageDialog(null," ----------------------------------------\n"
             + " ESTOQUE \n"
             + " ----------------------------------------\n"
-            + CadastroProduto.verEstoque());
+            + EstoqueCarrinho.verEstoque());
 
         MenuComercio.Menu(); // RETORNA MENU COMERCIO
     }

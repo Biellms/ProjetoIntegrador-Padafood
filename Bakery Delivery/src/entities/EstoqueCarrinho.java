@@ -35,7 +35,7 @@ public class EstoqueCarrinho {
                 + "\n 2) Voltar"
                 + "\n\n Opção:"));
             if (op == 1) { Cadastrar(); }
-            else { MenuCliente.Menu(); } // RETORNA MENU COMERCIO
+            else { MenuComercio.Menu(); } // RETORNA MENU COMERCIO
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
@@ -61,7 +61,7 @@ public class EstoqueCarrinho {
 
     // Carrinho
     public static void Comprar() {
-        int back = EstoqueCarrinho.produto.size() + 1;
+        int back = produto.size() + 1;
 
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
@@ -89,7 +89,7 @@ public class EstoqueCarrinho {
     }
 
     public static void removerCarrinho() {
-        int back = EstoqueCarrinho.produto.size() + 1;
+        int back = carrinho.size() + 1;
 
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"

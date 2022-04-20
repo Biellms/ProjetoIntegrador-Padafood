@@ -35,7 +35,7 @@ public class EstoqueCarrinho {
                 + "\n 2) Voltar"
                 + "\n\n Opção:"));
             if (op == 1) { Cadastrar(); }
-            else { MenuComercio.Menu(); } // RETORNA MENU COMERCIO
+            else { MenuCliente.Menu(); } // RETORNA MENU COMERCIO
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
@@ -78,6 +78,34 @@ public class EstoqueCarrinho {
                 op -= 1;
                 carrinho.add(produto.get(op));
                 MenuCliente.Menu();
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
+                + "\n Você deve entrar com um número INTEIRO!"
+                + "\n Por favor tente novamente!");
+
+            Comprar(); // RETORNA MENU COMPRAR
+        }
+    }
+
+    public static void removerCarrinho() {
+        int back = EstoqueCarrinho.produto.size() + 1;
+
+        try {
+            int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
+			+ " Comércio: "+ComercioClass.getNome()
+			+ "\n----------------------------------------\n"
+			+ verCarrinho()
+			+ "----------------------------------------\n"
+			+ " "+back+") Voltar\n\n"
+			+ "Selecione a opção que deseje comprar:     "));
+
+            if (op == back) {
+                MenuCliente.Carrinho();
+            } else {
+                op -= 1;
+                carrinho.remove(op);
+                MenuCliente.Carrinho();
             }
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"

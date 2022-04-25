@@ -19,19 +19,20 @@ public class Main {
 				+ "ESCOLHA A OPÇÃO\n ----------------------------------------\n "
 				+ "1) Login\n 2) Cadastro\n 3) Informações do Sistema\n 4) Sair\n\n Opção: "));
 			
+				switch (op) {
+					case 1: LoginECadastro.Login(); break;
+					case 2: LoginECadastro.Cadastro(); break;
+					case 3: Info(); break;
+					case 4: System.exit(0); break;
+					default: JOptionPane.showMessageDialog(null,"\n Opcao Inválida!!"); Menu(); break;
+				}
+				
 		} catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 				+ "\n Você deve entrar com um número INTEIRO!"
 				+ "\n Por favor tente novamente!");
 			Main.Menu(); }
 
-			switch (op) {
-				case 1: LoginECadastro.Login(); break;
-				case 2: LoginECadastro.Cadastro(); break;
-				case 3: Info(); break;
-				case 4: System.exit(0); break;
-				default: JOptionPane.showMessageDialog(null,"\n Opcao Inválida!!"); Main.Menu(); break;
-			}
 	}
 
 	public static void Info() {

@@ -1,14 +1,11 @@
 package interfaces;
 
-import java.util.*;
 import javax.swing.*;
 
 import entities.EstoqueCarrinho;
 import entities.ComercioClass;
 
 public class MenuComercio {
-
-    Scanner ler = new Scanner(System.in);
 
     public static void Menu() {
 
@@ -25,20 +22,20 @@ public class MenuComercio {
                 + " 4) Sair\n"
                 + "\n Opção:"));
 
+                switch (op) {
+                    case 1: cadastrarProduto(); break;
+                    case 2: Estoque(); break;
+                    case 3: ComercioClass.print(); break;
+                    case 4: Main.Menu(); break;
+                    default: JOptionPane.showMessageDialog(null," Opção Inválida!"); Menu(); break;
+                }
+
             } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro
                 JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
                     + "\n Você deve entrar com um número INTEIRO!"
                     + "\n Por favor tente novamente!");
 
                 MenuComercio.Menu(); // RETORNA MENU COMERCIO
-            }
-
-            switch (op) {
-                case 1: cadastrarProduto(); break;
-                case 2: Estoque(); break;
-                case 3: ComercioClass.print(); break;
-                case 4: Main.Menu(); break;
-                default: break;
             }
     }
 
@@ -50,8 +47,9 @@ public class MenuComercio {
         JOptionPane.showMessageDialog(null," ----------------------------------------\n"
             + " ESTOQUE \n"
             + " ----------------------------------------\n"
-            + EstoqueCarrinho.verEstoque());
-
+            + EstoqueCarrinho.verEstoque()
+            + " ----------------------------------------\n");
+            
         MenuComercio.Menu(); // RETORNA MENU COMERCIO
     }
 }

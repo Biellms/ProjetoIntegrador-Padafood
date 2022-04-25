@@ -28,7 +28,7 @@ public class MenuCliente {
                     case 2: Carrinho(); break;
                     case 3: ClienteClass.print(); break;
                     case 4: Main.Menu(); break;
-                    default: break;
+                    default: JOptionPane.showMessageDialog(null," Opção Inválida!"); Menu(); break;
                 }
 
             } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro

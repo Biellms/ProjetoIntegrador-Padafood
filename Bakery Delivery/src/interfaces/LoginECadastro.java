@@ -24,18 +24,19 @@ public class LoginECadastro {
                 + " 3) Voltar\n"
                 + "\n Opção:"));
 
+                switch (op) {
+                    case 1: ClienteClass.login(); break;
+                    case 2: ComercioClass.login(); break;
+                    case 3: Main.Menu(); break;
+                    default: JOptionPane.showMessageDialog(null," Opção Inválida!"); Login(); break;
+                } 
+
         } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 					+ "\n Você deve entrar com um número INTEIRO!"
 					+ "\n Por favor tente novamente!");
 			        Login(); }
-                       
-            switch (op) {
-                case 1: ClienteClass.login(); break;
-                case 2: ComercioClass.login(); break;
-                case 3: Main.Menu(); break;
-                default: Login(); break;
-            } 
+ 
     }
 
     public static void Cadastro() {
@@ -52,18 +53,18 @@ public class LoginECadastro {
                 + " 3) Voltar\n"
                 + "\n Opção:"));
 
+                switch (op) {
+                    case 1: ClienteClass.cadastro(); break;
+                    case 2: ComercioClass.cadastro(); break;
+                    case 3: Main.Menu(); break;
+                    default: JOptionPane.showMessageDialog(null," Opção Inválida!"); Cadastro(); break;
+                } 
+
         } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro 
 			JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
 					+ "\n Você deve entrar com um número INTEIRO!"
 					+ "\n Por favor tente novamente!");
-			        Cadastro(); }
-                       
-            switch (op) {
-                case 1: ClienteClass.cadastro(); break;
-                case 2: ComercioClass.cadastro(); break;
-                case 3: Main.Menu(); break;
-                default: Cadastro(); break;
-            } 
+			    Cadastro(); }
     }
 
 }

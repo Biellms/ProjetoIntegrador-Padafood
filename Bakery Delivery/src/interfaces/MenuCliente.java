@@ -58,7 +58,7 @@ public class MenuCliente {
                 + "\n Opção"));
 
                 switch (op) {
-                    case 1: JOptionPane.showMessageDialog(null," Pedido Finalizado!"); Carrinho(); break;
+                    case 1: FinalizarPedido.Menu();  break;
                     case 2: EstoqueCarrinho.removerCarrinho(); break;
                     case 3: Menu(); break;
                     default: JOptionPane.showMessageDialog(null," Opção Inválida!"); Carrinho(); break;

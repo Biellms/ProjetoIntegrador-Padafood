@@ -1,6 +1,5 @@
 package entities;
 
-import java.util.*;
 import javax.swing.*;
 
 import interfaces.LoginECadastro;
@@ -8,16 +7,14 @@ import interfaces.MenuComercio;
 
 public class ComercioClass {
     
-    /* Atributos Static para não precisar criar um Objeto, e não 
-	acabar perdendo o valor ao voltar em algum método*/
+    /* Atributos Static para não precisar instanciar um Objeto, e não 
+	perder o valor ao voltar em algum método*/
     private static String nome;
     private static String email;
     private static String senha;
     private static String telefone;
     private static String endereco;
     private static Boolean status;
-
-    Scanner ler = new Scanner(System.in);
 
     // Construtor
     public ComercioClass() {

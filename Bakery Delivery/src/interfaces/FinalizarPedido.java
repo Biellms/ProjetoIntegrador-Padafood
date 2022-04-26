@@ -1,25 +1,32 @@
 package interfaces;
 
-import java.util.*;
 import javax.swing.*;
+
+import entities.PagamentoClass;
 
 public class FinalizarPedido {
 
-    public static void Cadastrar() {
-
-        int op = 0;
+    public static void Menu() {
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
-                + " Forma de Pagamento: 'null'\n"
-                + " ----------------------------------------\n"
-                + " Exemplo\n Exemplo\n Exemplo\n Exemplo\n"
-                + " ----------------------------------------\n"
-                + " 1) Adicionar/Atualizar\n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog(null,
+                " --------------------------------------------------------------\n"
+                + PagamentoClass.print()
+                + " --------------------------------------------------------------\n"
+                + " 1) Adicionar Forma de Pagamento\n"
                 + " 2) Remover\n"
-                + " ----------------------------------------\n"
-                + " 3) Sair\n"
+                + " 3) Finalizar Pedido\n"
+                + " --------------------------------------------------------------\n"
+                + " 4) Voltar\n"
                 + "\n Opção:"));
+
+                switch (op) {
+                    case 1: JOptionPane.showMessageDialog(null, " Forma de Pagamento Adicionada/Atualizada!   "); Menu(); break;
+                    case 2: JOptionPane.showMessageDialog(null, " Forma de Pagamento Removida!   "); Menu(); break;
+                    case 3: JOptionPane.showMessageDialog(null, " Pedido Finalizado!   "); Menu(); break;
+                    case 4: MenuCliente.Carrinho(); break;
+                    default: MenuCliente.Carrinho(); break;
+                }
 
             } catch (NumberFormatException e) { // Verifica se o dado de entrada é um numero inteiro
                 JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
@@ -28,5 +35,9 @@ public class FinalizarPedido {
 
                 MenuCliente.Carrinho(); // RETORNA MENU CARRINHO
             }
+    }
+
+    public static void main(String[] args) {
+        Menu();
     }
 }

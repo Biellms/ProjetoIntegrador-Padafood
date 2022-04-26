@@ -3,7 +3,8 @@ package interfaces;
 import javax.swing.*;
 
 import entities.EstoqueCarrinho;
-import entities.PagamentoClass;
+import entities.CartaoClass;
+import entities.EnderecoClass;
 
 public class FinalizarPedido {
 
@@ -12,7 +13,7 @@ public class FinalizarPedido {
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog(null,
                 " --------------------------------------------------------------\n"
-                + PagamentoClass.print()
+                + CartaoClass.print()
                 + " --------------------------------------------------------------\n"
                 + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
                 + " 1) Finalizar Pedido\n"
@@ -39,9 +40,13 @@ public class FinalizarPedido {
             }
     }
 
-    public static void Finalizar() {
-        JOptionPane.showMessageDialog(null, " Pedido Finalizado!   ");
-        Menu();
+    public static void Finalizar() { // Por condicional de pagamento
+        if (CartaoClass.getStatus() == null || CartaoClass.getStatus() == false) {
+            JOptionPane.showMessageDialog(null, " Adicione um método de pagamento primeiro!   ");
+            Adicionar();
+        } else {
+            EnderecoClass.cadastro();
+        }
     }
 
     public static void Adicionar() {
@@ -53,8 +58,10 @@ public class FinalizarPedido {
                 + " Opção"));
 
                 switch (op) {
-                    case 1: Finalizar(); break;
-                    case 2: PagamentoClass.cadastro(); break;
+                    case 1: CartaoClass.setStatus(true); 
+                            CartaoClass.setTipo("Pagar na Entrega"); 
+                            Finalizar(); break;
+                    case 2: CartaoClass.cadastro(); break;
                     default: Adicionar(); break;
                 }
             
@@ -68,8 +75,24 @@ public class FinalizarPedido {
     }
 
     public static void Remover() {
-        PagamentoClass.remover();
+        CartaoClass.remover();
         Menu();
+    }
+
+    public static void Confirmar() { // Implementar carrinho e endereço
+        int op = Integer.parseInt(JOptionPane.showInputDialog(" Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
+        + " Confirmar pedido?\n"
+        + " 1) Sim\n"
+        + " 2) Não\n\n"
+        + " Opção:"));
+
+        if (op == 1) {
+            JOptionPane.showMessageDialog(null, " Pedido processado com sucesso");
+            Menu();
+        } else {
+            Menu();
+        }
+        
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,7 @@ import javax.swing.*;
 
 import interfaces.FinalizarPedido;
 
-public class PagamentoClass {
+public class CartaoClass {
 
     // Atributos
     private static String tipo;
@@ -15,11 +15,6 @@ public class PagamentoClass {
 	private static Boolean status;
 
     public static String textoPagamento = "";
-
-    // Construtor
-    public PagamentoClass() {
-        status = false;
-    }
 
     // Métodos
     public static void cadastro() { // Implementa dados para o Pagamento
@@ -50,7 +45,6 @@ public class PagamentoClass {
         FinalizarPedido.Menu();
     }
 
-
     public static String print() {
         textoPagamento = "";
         if (status == null || status == false) {
@@ -71,36 +65,36 @@ public class PagamentoClass {
         return tipo;
     }
     public static void setTipo(String tipo) {
-        PagamentoClass.tipo = tipo;
+        CartaoClass.tipo = tipo;
     }
     public static String getNome() {
         return nome;
     }
     public static void setNome(String nome) {
-        PagamentoClass.nome = nome;
+        CartaoClass.nome = nome;
     }
     public static String getNumero() {
         return numero;
     }
     public static void setNumero(String numero) {
-        PagamentoClass.numero = numero;
+        CartaoClass.numero = numero;
     }
     public static String getDataVenc() {
         return dataVenc;
     }
     public static void setDataVenc(String dataVenc) {
-        PagamentoClass.dataVenc = dataVenc;
+        CartaoClass.dataVenc = dataVenc;
     }
     public static String getCodSeg() {
         return codSeg;
     }
     public static void setCodSeg(String codSeg) {
-        PagamentoClass.codSeg = codSeg;
+        CartaoClass.codSeg = codSeg;
     }
     public static Boolean getStatus() {
         return status;
     }
     public static void setStatus(Boolean status) {
-        PagamentoClass.status = status;
+        CartaoClass.status = status;
     }
 }

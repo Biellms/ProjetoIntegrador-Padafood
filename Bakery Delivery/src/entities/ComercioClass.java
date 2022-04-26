@@ -25,8 +25,8 @@ public class ComercioClass {
     public static void cadastro() {	// Implementa dados aos Atributos da PessoaCadastro
 		String a, b, c, d, e;
 
-		JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n"
-				+ " CADASTRO COMÉRCIO\n ----------------------------------------");
+		JOptionPane.showMessageDialog(null," ----------------------------------------\n"
+				+ " CADASTRAR COMÉRCIO\n ----------------------------------------");
 		a = JOptionPane.showInputDialog(" Nome: "); setNome(a);
 		b = JOptionPane.showInputDialog(" Email: "); setEmail(b);
 		c = JOptionPane.showInputDialog(" Senha: "); setSenha(c);
@@ -34,7 +34,7 @@ public class ComercioClass {
         e = JOptionPane.showInputDialog(" Endereço: "); setEndereco(e);
 		status = true;
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!    "
-										 + "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
+			+ "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 
 		MenuComercio.Menu(); // RETORNA MENU COMERCIO
 	}

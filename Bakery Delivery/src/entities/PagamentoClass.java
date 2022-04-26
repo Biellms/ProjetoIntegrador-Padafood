@@ -2,6 +2,8 @@ package entities;
 
 import javax.swing.*;
 
+import interfaces.FinalizarPedido;
+
 public class PagamentoClass {
 
     // Atributos
@@ -12,7 +14,7 @@ public class PagamentoClass {
 	private static String codSeg;
 	private static Boolean status;
 
-    private static String textoPagamento = "";
+    public static String textoPagamento = "";
 
     // Construtor
     public PagamentoClass() {
@@ -20,9 +22,39 @@ public class PagamentoClass {
     }
 
     // Métodos
+    public static void cadastro() { // Implementa dados para o Pagamento
+		String a, b, c, d;
+
+		int op = Integer.parseInt(JOptionPane.showInputDialog(" ----------------------------------------\n"
+            + " CADASTRAR CARTÃO\n"
+            + " ----------------------------------------\n"
+            + " 1) Cartão de Crédito\n"
+            + " 2) Cartão de Débito\n\n"
+            + " Opção:"));
+
+            if (op == 1) { setTipo("Crédito"); } 
+            else { setTipo("Débito"); }
+        
+            a = JOptionPane.showInputDialog(" Nome do Titular: "); setNome(a);
+            b = JOptionPane.showInputDialog(" Número do Cartão: "); setNumero(b);
+            c = JOptionPane.showInputDialog(" Data de Vencimento: "); setDataVenc(c);
+            d = JOptionPane.showInputDialog(" Código de Segurança: "); setCodSeg(d);
+            status = true;
+            JOptionPane.showMessageDialog(null,"\n CARTÃO CADASTRADO COM SUCESSO!!    ");
+
+		FinalizarPedido.Menu(); // RETORNA FINALIZAR PEDIDO
+	}
+
+    public static void remover() {
+        setStatus(false);
+        FinalizarPedido.Menu();
+    }
+
+
     public static String print() {
+        textoPagamento = "";
         if (status == null || status == false) {
-            textoPagamento = " Nenhuma forma de pagamento cadastrado!\n";
+            textoPagamento = " Nenhuma forma de pagamento cadastrada!\n";
         } else {
             textoPagamento = " Forma de pagamento: "+getTipo()
                 + "\n Nome do titular: "+getNome()

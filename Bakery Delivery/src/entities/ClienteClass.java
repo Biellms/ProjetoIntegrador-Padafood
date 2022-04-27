@@ -30,7 +30,7 @@ public class ClienteClass {
 		b = JOptionPane.showInputDialog(" Email: "); setEmail(b);
 		c = JOptionPane.showInputDialog(" Senha: "); setSenha(c);
 		d = JOptionPane.showInputDialog(" Telefone: "); setTelefone(d);
-		status = true;
+		setStatus(true);
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!    "
 			+ "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 

@@ -10,6 +10,7 @@ public class EnderecoClass {
     private static String rua;
     private static int numero;
     private static String complemento;
+    private static Boolean status;
 
     public static String textoEndereco = "";
 
@@ -23,7 +24,8 @@ public class EnderecoClass {
             a = JOptionPane.showInputDialog(" Endereço: "); setRua(a);
             b = Integer.parseInt(JOptionPane.showInputDialog(" Número: ")); setNumero(b);
             c = JOptionPane.showInputDialog(" Complemento: "); setComplemento(c);
-            JOptionPane.showMessageDialog(null,"\n ENDEREÇO CADASTRADO COM SUCESSO!!    ");
+            setStatus(true);
+            JOptionPane.showMessageDialog(null,"\n ENDEREÇO CADASTRADO COM SUCESSO!!    \n");
 
 		FinalizarPedido.Confirmar(); // RETORNA CONFIRMAR PEDIDO
 	}
@@ -58,6 +60,14 @@ public class EnderecoClass {
 
     public static void setComplemento(String complemento) {
         EnderecoClass.complemento = complemento;
+    }
+
+    public static Boolean getStatus() {
+        return status;
+    }
+
+    public static void setStatus(Boolean status) {
+        EnderecoClass.status = status;
     }
 
 }

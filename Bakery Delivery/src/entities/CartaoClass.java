@@ -35,15 +35,10 @@ public class CartaoClass {
             c = JOptionPane.showInputDialog(" Data de Vencimento: "); setDataVenc(c);
             d = JOptionPane.showInputDialog(" Código de Segurança: "); setCodSeg(d);
             status = true;
-            JOptionPane.showMessageDialog(null,"\n CARTÃO CADASTRADO COM SUCESSO!!    ");
+            JOptionPane.showMessageDialog(null,"\n CARTÃO CADASTRADO COM SUCESSO!!    \n");
 
 		FinalizarPedido.Menu(); // RETORNA FINALIZAR PEDIDO
 	}
-
-    public static void remover() {
-        setStatus(false);
-        FinalizarPedido.Menu();
-    }
 
     public static String print() {
         textoPagamento = "";

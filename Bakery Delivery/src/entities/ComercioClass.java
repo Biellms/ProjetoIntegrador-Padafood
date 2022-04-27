@@ -32,7 +32,7 @@ public class ComercioClass {
 		c = JOptionPane.showInputDialog(" Senha: "); setSenha(c);
 		d = JOptionPane.showInputDialog(" Telefone: "); setTelefone(d);
         e = JOptionPane.showInputDialog(" Endereço: "); setEndereco(e);
-		status = true;
+		setStatus(true);
 		JOptionPane.showMessageDialog(null,"\n CADASTRADO COM SUCESSO!!    "
 			+ "\n\n Seja Bem-Vindo "+getNome()+"!!\n");
 

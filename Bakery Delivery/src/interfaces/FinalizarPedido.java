@@ -41,12 +41,17 @@ public class FinalizarPedido {
     }
 
     public static void Finalizar() { // Por condicional de pagamento
-        if (CartaoClass.getStatus() == null || CartaoClass.getStatus() == false) {
-            JOptionPane.showMessageDialog(null, " Adicione um método de pagamento primeiro!   ");
-            Adicionar();
+        if (EnderecoClass.getStatus() == null || EnderecoClass.getStatus() == false) {
+            if (CartaoClass.getStatus() == null || CartaoClass.getStatus() == false) {
+                JOptionPane.showMessageDialog(null, " Adicione um método de pagamento primeiro!   ");
+                Adicionar();
+            } else {
+                EnderecoClass.cadastro();
+            }
         } else {
-            EnderecoClass.cadastro();
+            Confirmar();
         }
+        
     }
 
     public static void Adicionar() {
@@ -75,7 +80,9 @@ public class FinalizarPedido {
     }
 
     public static void Remover() {
-        CartaoClass.remover();
+        CartaoClass.setStatus(false);
+        EnderecoClass.setStatus(false);
+        JOptionPane.showMessageDialog(null, "Removido com sucesso!    \n");
         Menu();
     }
 
@@ -87,7 +94,7 @@ public class FinalizarPedido {
         + " Opção:"));
 
         if (op == 1) {
-            JOptionPane.showMessageDialog(null, " Pedido processado com sucesso");
+            JOptionPane.showMessageDialog(null, " Pedido processado com sucesso!");
             Menu();
         } else {
             Menu();

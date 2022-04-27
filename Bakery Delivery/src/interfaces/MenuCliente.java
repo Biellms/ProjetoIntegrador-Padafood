@@ -13,13 +13,13 @@ public class MenuCliente {
     public static void Menu() {
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+            int op = Integer.parseInt(JOptionPane.showInputDialog("-------------------------------------------------------------- \n"
                 + " Cliente "+ClienteClass.getNome()+"\n"
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " 1) Comprar\n"
                 + " 2) Carrinho\n"
                 + " 3) Informações do Usuário\n"
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " 4) Sair\n"
                 + "\n Opção:"));
 
@@ -46,14 +46,16 @@ public class MenuCliente {
     public static void Carrinho() {
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog(null," ----------------------------------------\n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog(null,
+                " -------------------------------------------------------------- \n"
                 + " CARRINHO \n"
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + EstoqueCarrinho.verCarrinho()
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
                 + " 1) Finalizar Pedido\n"
                 + " 2) Remover Produto\n"
+                + " -------------------------------------------------------------- \n"
                 + " 3) Voltar\n"
                 + "\n Opção"));
 

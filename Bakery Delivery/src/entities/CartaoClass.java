@@ -40,17 +40,26 @@ public class CartaoClass {
 		FinalizarPedido.Menu(); // RETORNA FINALIZAR PEDIDO
 	}
 
+    public static void entrega() {
+        setStatus(true);
+        setTipo("Pagar na Entrega");
+    }
+
     public static String print() {
         textoPagamento = "";
         if (status == null || status == false) {
             textoPagamento = " Nenhuma forma de pagamento cadastrada!\n";
         } else {
-            textoPagamento = " Forma de pagamento: "+getTipo()
+            if (getTipo() == "Pagar na Entrega") {
+                textoPagamento = " Forma de Pagamento: "+getTipo()+"\n";
+            } else {
+                textoPagamento = " Forma de pagamento: "+getTipo()
                 + "\n Nome do titular: "+getNome()
                 + "\n Número: "+getNumero()
                 + "\n Data de Vencimento: "+getDataVenc()
                 + "\n Código de Segurança: "+getCodSeg()
                 + "\n";
+            }
         }
         return textoPagamento;
     }

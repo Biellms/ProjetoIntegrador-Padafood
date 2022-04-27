@@ -12,13 +12,13 @@ public class MenuComercio {
         int op = 0;
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+            op = Integer.parseInt(JOptionPane.showInputDialog(" -------------------------------------------------------------- \n"
                 + " Comércio "+ComercioClass.getNome()+"\n"
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " 1) Cadastrar Produto\n"
                 + " 2) Estoque\n"
                 + " 3) Informações do Usuário\n"
-                + " ----------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " 4) Sair\n"
                 + "\n Opção:"));
 
@@ -44,11 +44,12 @@ public class MenuComercio {
     }
 
     public static void Estoque() {
-        JOptionPane.showMessageDialog(null," ----------------------------------------\n"
+        JOptionPane.showMessageDialog(null,
+            " -------------------------------------------------------------- \n"
             + " ESTOQUE \n"
-            + " ----------------------------------------\n"
+            + " -------------------------------------------------------------- \n"
             + EstoqueCarrinho.verEstoque()
-            + " ----------------------------------------\n");
+            + " -------------------------------------------------------------- \n");
             
         MenuComercio.Menu(); // RETORNA MENU COMERCIO
     }

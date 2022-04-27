@@ -15,9 +15,13 @@ public class Main {
 		// Menu de opções
 		// Exception para aceitar apenas Números
 		try {
-			op = Integer.parseInt(JOptionPane.showInputDialog("\n ----------------------------------------\n "
-				+ "ESCOLHA A OPÇÃO\n ----------------------------------------\n "
-				+ "1) Login\n 2) Cadastro\n 3) Informações do Sistema\n 4) Sair\n\n Opção: "));
+			op = Integer.parseInt(JOptionPane.showInputDialog(
+				" -------------------------------------------------------------- \n"
+				+ " ESCOLHA A OPÇÃO\n"
+				+ " -------------------------------------------------------------- \n"
+				+ " 1) Login\n 2) Cadastro\n 3) Informações do Sistema\n"
+				+ " -------------------------------------------------------------- \n"
+				+ " 4) Sair\n\n Opção: "));
 			
 				switch (op) {
 					case 1: LoginECadastro.Login(); break;

@@ -12,14 +12,14 @@ public class FinalizarPedido {
 
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog(null,
-                " --------------------------------------------------------------\n"
+                " -------------------------------------------------------------- \n"
                 + CartaoClass.print()
-                + " --------------------------------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
                 + " 1) Finalizar Pedido\n"
                 + " 2) Adicionar Forma de Pagamento\n"
                 + " 3) Remover Forma de Pagamento\n"
-                + " --------------------------------------------------------------\n"
+                + " -------------------------------------------------------------- \n"
                 + " 4) Voltar\n"
                 + "\n Opção:"));
 
@@ -43,7 +43,7 @@ public class FinalizarPedido {
     public static void Finalizar() { // Por condicional de pagamento
         if (EnderecoClass.getStatus() == null || EnderecoClass.getStatus() == false) {
             if (CartaoClass.getStatus() == null || CartaoClass.getStatus() == false) {
-                JOptionPane.showMessageDialog(null, " Adicione um método de pagamento primeiro!   ");
+                JOptionPane.showMessageDialog(null, " ADICIONE UM MÉTODO DE PAGAMENTO PRIMEIRO!   \n");
                 Adicionar();
             } else {
                 EnderecoClass.cadastro();
@@ -58,15 +58,17 @@ public class FinalizarPedido {
 
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog(" Selecione a Forma de Pagamento:\n\n"
+                + " ------------------------------------------- \n"
                 + " 1) Pagar na Entrega\n"
-                + " 2) Pagar no Aplicativo\n\n"
+                + " 2) Pagar no Aplicativo\n"
+                + " ------------------------------------------- \n"
+                + " 3) Voltar\n\n"
                 + " Opção"));
 
                 switch (op) {
-                    case 1: CartaoClass.setStatus(true); 
-                            CartaoClass.setTipo("Pagar na Entrega"); 
-                            Finalizar(); break;
+                    case 1: CartaoClass.entrega(); Finalizar(); break;
                     case 2: CartaoClass.cadastro(); break;
+                    case 3: Menu();
                     default: Adicionar(); break;
                 }
             
@@ -82,27 +84,43 @@ public class FinalizarPedido {
     public static void Remover() {
         CartaoClass.setStatus(false);
         EnderecoClass.setStatus(false);
-        JOptionPane.showMessageDialog(null, "Removido com sucesso!    \n");
+        JOptionPane.showMessageDialog(null, " REMOVIDO COM SUCESSO!    \n");
         Menu();
     }
 
     public static void Confirmar() { // Implementar carrinho e endereço
-        int op = Integer.parseInt(JOptionPane.showInputDialog(" Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
-        + " Confirmar pedido?\n"
-        + " 1) Sim\n"
-        + " 2) Não\n\n"
-        + " Opção:"));
+        try {
+            int op = Integer.parseInt(JOptionPane.showInputDialog(
+                " -------------------------------------------------------------- \n"
+                + EstoqueCarrinho.verCarrinho()
+                + " -------------------------------------------------------------- \n"
+                + CartaoClass.print()
+                + " -------------------------------------------------------------- \n"
+                + EnderecoClass.print()
+                + " -------------------------------------------------------------- \n"
+                + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
+                + " Confirmar pedido?\n"
+                + " 1) Sim          2) Não\n\n"
+                + " Opção:"));
 
-        if (op == 1) {
-            JOptionPane.showMessageDialog(null, " Pedido processado com sucesso!");
-            Menu();
-        } else {
-            Menu();
+            if (op == 1) {
+                JOptionPane.showMessageDialog(null, " PEDIDO PROCESSADO COM SUCESSO!");
+                Menu();
+            } else {
+                Menu();
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
+                    + "\n Você deve entrar com um número INTEIRO!"
+                    + "\n Por favor tente novamente!");
+
+                Confirmar(); // RETORNA MÉTODO CONFIRMAR
         }
+        
         
     }
 
     public static void main(String[] args) {
-        Menu();
+        Confirmar();
     }
 }

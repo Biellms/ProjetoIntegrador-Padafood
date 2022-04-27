@@ -64,11 +64,11 @@ public class EstoqueCarrinho {
         int back = produto.size() + 1;
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog("-------------------------------------------------------------- \n"
 			+ " Comércio: "+ComercioClass.getNome()
-			+ "\n----------------------------------------\n"
+			+ "\n-------------------------------------------------------------- \n"
 			+ verEstoque()
-			+ "----------------------------------------\n"
+			+ "\n-------------------------------------------------------------- \n"
 			+ " "+back+") Voltar\n\n"
 			+ "Selecione a opção que deseje comprar:     "));
 
@@ -92,11 +92,11 @@ public class EstoqueCarrinho {
         int back = carrinho.size() + 1;
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog("-------------------------------------------------------------- \n"
 			+ " Comércio: "+ComercioClass.getNome()
-			+ "\n----------------------------------------\n"
+			+ "\n-------------------------------------------------------------- \n"
 			+ verCarrinho()
-			+ "----------------------------------------\n"
+			+ "\n-------------------------------------------------------------- \n"
 			+ " "+back+") Voltar\n\n"
 			+ "Selecione a opção que deseje comprar:     "));
 

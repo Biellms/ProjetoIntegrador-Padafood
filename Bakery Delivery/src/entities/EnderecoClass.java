@@ -25,7 +25,7 @@ public class EnderecoClass {
             b = Integer.parseInt(JOptionPane.showInputDialog(" Número: ")); setNumero(b);
             c = JOptionPane.showInputDialog(" Complemento: "); setComplemento(c);
             setStatus(true);
-            JOptionPane.showMessageDialog(null,"\n ENDEREÇO CADASTRADO COM SUCESSO!!    \n");
+            JOptionPane.showMessageDialog(null,"\n ENDEREÇO CADASTRADO COM SUCESSO!    \n");
 
 		FinalizarPedido.Confirmar(); // RETORNA CONFIRMAR PEDIDO
 	}

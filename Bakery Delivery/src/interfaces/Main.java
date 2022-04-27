@@ -1,8 +1,8 @@
 package interfaces;
 
-
 import java.awt.*;
-// import java.net.*;
+import java.net.*;
+
 import javax.swing.*;
 import javax.swing.plaf.*;
 
@@ -46,16 +46,17 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		
-		// // Alterando Fonte do JOptionPane
+		// Alterando Fonte do JOptionPane
 		UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.BOLD , 14)));
 		
-		// // Gif no JOptionPane
-		// final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
+		// Gif no JOptionPane
+		final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
 		
-		// JOptionPane.showMessageDialog(null,null,null, JOptionPane.INFORMATION_MESSAGE, icon);
-		// JOptionPane.showMessageDialog(null,"\n ----------------------------------------\n "
-		// 		+ "BEM VINDO AO STEAM 36!!\n "
-		// 		+ "----------------------------------------");
+		JOptionPane.showMessageDialog(null,null,null, JOptionPane.INFORMATION_MESSAGE, icon);
+		JOptionPane.showMessageDialog(null,
+			"\n -------------------------------------------------\n "
+			+ "BEM VINDO AO BAKERY DELIVERY\n "
+			+ "-------------------------------------------------");
 			
 		Main.Menu();
 	}

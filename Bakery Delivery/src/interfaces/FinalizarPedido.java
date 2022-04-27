@@ -57,11 +57,12 @@ public class FinalizarPedido {
     public static void Adicionar() {
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog(" Selecione a Forma de Pagamento:\n\n"
-                + " ------------------------------------------- \n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog(
+                " ------------------------------------------------- \n"
+                + " Selecione a Forma de Pagamento:    \n\n"
                 + " 1) Pagar na Entrega\n"
                 + " 2) Pagar no Aplicativo\n"
-                + " ------------------------------------------- \n"
+                + " ------------------------------------------------- \n"
                 + " 3) Voltar\n\n"
                 + " Opção"));
 
@@ -88,7 +89,8 @@ public class FinalizarPedido {
         Menu();
     }
 
-    public static void Confirmar() { // Implementar carrinho e endereço
+    public static void Confirmar() {
+
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog(
                 " -------------------------------------------------------------- \n"
@@ -105,22 +107,17 @@ public class FinalizarPedido {
 
             if (op == 1) {
                 JOptionPane.showMessageDialog(null, " PEDIDO PROCESSADO COM SUCESSO!");
-                Menu();
+                MenuCliente.Menu();
             } else {
                 Menu();
             }
+
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "\n Exception: "+e+"\n"
                     + "\n Você deve entrar com um número INTEIRO!"
                     + "\n Por favor tente novamente!");
 
                 Confirmar(); // RETORNA MÉTODO CONFIRMAR
-        }
-        
-        
-    }
-
-    public static void main(String[] args) {
-        Confirmar();
+        }  
     }
 }

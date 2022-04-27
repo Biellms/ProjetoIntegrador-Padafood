@@ -98,7 +98,7 @@ public class EstoqueCarrinho {
 			+ verCarrinho()
 			+ "\n-------------------------------------------------------------- \n"
 			+ " "+back+") Voltar\n\n"
-			+ "Selecione a opção que deseje comprar:     "));
+			+ "Selecione a opção que deseje remover:     "));
 
             if (op == back) {
                 MenuCliente.Carrinho();

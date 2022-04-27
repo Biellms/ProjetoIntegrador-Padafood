@@ -15,7 +15,7 @@ public class LoginECadastro {
         int op = 0;
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+            op = Integer.parseInt(JOptionPane.showInputDialog(" ----------------------------------------\n "
                 + " Escolha o tipo de Login\n"
                 + " ----------------------------------------\n"
                 + " 1) Cliente\n"
@@ -44,7 +44,7 @@ public class LoginECadastro {
         int op = 0;
 
         try {
-            op = Integer.parseInt(JOptionPane.showInputDialog("\n----------------------------------------\n "
+            op = Integer.parseInt(JOptionPane.showInputDialog(" ----------------------------------------\n "
                 + " Escolha o tipo de Cadastro\n"
                 + " ----------------------------------------\n"
                 + " 1) Cliente\n"

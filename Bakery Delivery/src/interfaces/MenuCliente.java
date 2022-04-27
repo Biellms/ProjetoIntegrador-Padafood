@@ -13,7 +13,7 @@ public class MenuCliente {
     public static void Menu() {
 
         try {
-            int op = Integer.parseInt(JOptionPane.showInputDialog("-------------------------------------------------------------- \n"
+            int op = Integer.parseInt(JOptionPane.showInputDialog(" -------------------------------------------------------------- \n"
                 + " Cliente "+ClienteClass.getNome()+"\n"
                 + " -------------------------------------------------------------- \n"
                 + " 1) Comprar\n"

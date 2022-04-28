@@ -1,6 +1,6 @@
 
 <div align = "center">
-  <img width="750px" src=""/>
+  <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery/blob/main/Documentação/Bakery%20Delivery.png"/>
   <hr>
   <h3>
   <b>Projeto Integrador / Bakery Delivery</b></br></div>
@@ -16,16 +16,21 @@
   <h3><b>Introdução</b></h3>
   </div>
   
-<hr>  
+# 
   
 ### **Protótipo Navegável** <img align="center" alt="Biell-Figma" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
 
 - <a href="https://www.figma.com/proto/mWN4i7eqHWmI02T7pFGEC4/PADOC%40-TOP-cliente?node-id=422%3A835&scaling=scale-down&page-id=0%3A1" target="_blank"><p target="_blank">Protótipo Cliente</a>
 - <a href="https://www.figma.com/proto/joR9dtuyvvFFLP75K7UfW7/PADOC%40-TOP-funcionario?scaling=scale-down&page-id=0%3A1&node-id=1426%3A0" target="_blank"><p target="_blank">Protótipo Comércio</a>
+<<<<<<< HEAD
 
 > ##### Seguindo a mesma temática do projeto integrador do [2º Semestre](https://github.com/Biellms/ProjetoIntegrador-DeliveryC), o protótipo foi reutilizado como principal conceito de interface.
 
 <hr>
+=======
+  
+#
+>>>>>>> a920b91c0c2c174dd95580233db4673a84fa9c5e
 
 ### **Linguagens e Ferramentas** 🛠
 - Java (Linguagem)
@@ -34,7 +39,7 @@
 
 - Brainstorming (Dinâmica de grupo)
 
-<hr>
+#
 
 ### **Integrantes** 🤖
 

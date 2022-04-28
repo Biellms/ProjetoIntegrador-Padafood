@@ -1,6 +1,6 @@
 
 <div align = "center">
-  <img width="750px" src="https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery/blob/main/Documentação/Bakery%20Delivery.png"/>
+  <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery/blob/main/Documentação/Bakery%20Delivery.png"/>
   <hr>
   <h3>
   <b>Projeto Integrador / Bakery Delivery</b></br></div>

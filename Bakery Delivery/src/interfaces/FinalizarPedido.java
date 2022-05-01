@@ -16,7 +16,7 @@ public class FinalizarPedido {
                 + CartaoClass.print()
                 + " -------------------------------------------------------------- \n"
                 + " Valor Total: "+EstoqueCarrinho.formatarMoeda()+"\n\n"
-                + " 1) Finalizar Pedido\n"
+                + " 1) Confirmar Pedido\n"
                 + " 2) Adicionar Forma de Pagamento\n"
                 + " 3) Remover Forma de Pagamento\n"
                 + " -------------------------------------------------------------- \n"

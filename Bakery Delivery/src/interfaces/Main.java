@@ -52,11 +52,11 @@ public class Main {
 		// Gif no JOptionPane
 		final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
 		
-		JOptionPane.showMessageDialog(null,null,null, JOptionPane.INFORMATION_MESSAGE, icon);
+		JOptionPane.showMessageDialog(null,null,"START", JOptionPane.INFORMATION_MESSAGE, icon);
 		JOptionPane.showMessageDialog(null,
 			"\n -------------------------------------------------\n "
 			+ "BEM VINDO AO BAKERY DELIVERY\n "
-			+ "-------------------------------------------------");
+			+ "-------------------------------------------------","BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
 			
 		Main.Menu();
 	}

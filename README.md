@@ -3,7 +3,7 @@
   <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery/blob/main/Documentação/Bakery%20Delivery.png"/>
   <hr>
   <h3>
-  <b>Projeto Integrador / Bakery Delivery</b></br></div>
+  <b>Projeto Integrador / Padafood</b></br></div>
 
   <div align = "center">
   <p>Projeto integrador feito com a linguagem de programação Java, apresentando no 4º Semestre da faculdade de Análise e Desenvolvimento de Sistemas pela FAM (Faculdade das Américas).

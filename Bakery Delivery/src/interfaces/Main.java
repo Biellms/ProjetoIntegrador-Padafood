@@ -54,9 +54,9 @@ public class Main {
 		
 		JOptionPane.showMessageDialog(null,null,"START", JOptionPane.INFORMATION_MESSAGE, icon);
 		JOptionPane.showMessageDialog(null,
-			"\n -------------------------------------------------\n "
-			+ "BEM VINDO AO BAKERY DELIVERY\n "
-			+ "-------------------------------------------------","BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
+			"\n --------------------------------------\n"
+			+ " BEM-VINDO AO PADAFOOD"
+			+ "\n --------------------------------------","BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
 			
 		Main.Menu();
 	}

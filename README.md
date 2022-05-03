@@ -3,7 +3,7 @@
   <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery/blob/main/Documentação/Bakery%20Delivery.png"/>
   <hr>
   <h3>
-  <b>Projeto Integrador / Bakery Delivery</b></br></div>
+  <b>Projeto Integrador / Padafood</b></br></div>
 
   <div align = "center">
   <p>Projeto integrador feito com a linguagem de programação Java, apresentando no 4º Semestre da faculdade de Análise e Desenvolvimento de Sistemas pela FAM (Faculdade das Américas).
@@ -15,6 +15,8 @@
 <div align="center">
   <h3><b>Introdução</b></h3>
   </div>
+  
+O artigo apresenta o desenvolvimento e elaboração de um aplicativo em linguagem Java, no qual a problemática são as dificuldades financeiras das padarias com baixa renda, em relação aos seus prejuízos por não terem um meio de compartilhamento e distribuição de seus produtos. Para a solução, o desenvolvimento de um aplicativo da qual a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor relacionamento entre o comércio e o cliente, de forma prática, segura e com distanciamento social. o aplicativo será gratuito para todas as padarias de pequeno e médio porte.
   
 # 
   

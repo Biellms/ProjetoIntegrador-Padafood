@@ -20,6 +20,21 @@
   
 O artigo apresenta o desenvolvimento e elaboração de um aplicativo em linguagem Java, no qual a problemática são as dificuldades financeiras das padarias com baixa renda, em relação aos seus prejuízos por não terem um meio de compartilhamento e distribuição de seus produtos. Para a solução, o desenvolvimento de um aplicativo da qual a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor relacionamento entre o comércio e o cliente, de forma prática, segura e com distanciamento social. o aplicativo será gratuito para todas as padarias de pequeno e médio porte.
 
+#
+
+<div align="center">
+  <h3><b>Engenharia de Software</b></h3>
+  </div>
+
+Para tal problemática, foi desenvolvido um levantamento da declaração do produto, com as seguintes condições, “Para, Que, Categoria e Oferece”, conforme a tabela abaixo: 
+
+| Indicativo               | Descrição                                                    |
+| ------------------------- | ------------------------------------------------------------ |
+| **Para**            | Padarias de pequeno e médio porte, localizadas em comunidades e centros urbanos. |
+| **Que** | Necessitam melhorar sua aproximação com seu cliente de forma online, rápida e prática. |
+| **Categoria**            | É um sistema de catálogo e vendas de produtos, que ajudará o comerciante a compartilhar seus produtos para seus clientes de forma online. |
+| **Oferece**            | Ajuda de forma simples e eficaz a compra de alimentos e produtos de forma online e de graça, deixando a vida do usuário mais prática, álem de fazer o controle de entrada e saída da própria padaria. |
+
 <h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/tree/main/Padafood" target="_blank"><p target="_blank">• Código Desenvolvido 📝</a></b></h3>
 
 <h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/tree/main/Documentação" target="_blank"><p target="blank">• Documentação 📄</a></b></h3>

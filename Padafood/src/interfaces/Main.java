@@ -40,7 +40,22 @@ public class Main {
 	}
 
 	public static void Info() {
-		JOptionPane.showMessageDialog(null, "Informações");
+		JOptionPane.showMessageDialog(null, 
+
+		" --------------------------------------------------"
+		+ " PADAFOOD"
+		+ " ---------------------------------------------------       \n\n"
+		+ " 	Padafood é um aplicativo no qual a problemática são as dificuldades financeiras\n" 
+		+ " das padarias, em relação aos seus prejuízos sociais por não terem um meio de\n"
+		+ " compartilhamento e distribuição de seus produtos.\n\n"
+		+ " 	Para a solução, o desenvolvimento de um aplicativo da qual a padaria irá\n"
+		+ " cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente\n"
+		+ " consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor\n"
+		+ " relacionamento entre o comércio e o cliente, de forma prática, segura e com\n"
+		+ " distanciamento social.\n\n\n"
+		+ "                              Todos os Direitos Reservados © Gabriel Mendes",
+
+		"Informações", JOptionPane.INFORMATION_MESSAGE);
 		Main.Menu();
 	}
 

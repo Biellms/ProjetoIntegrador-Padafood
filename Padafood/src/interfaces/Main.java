@@ -52,8 +52,9 @@ public class Main {
 		+ " cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente\n"
 		+ " consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor\n"
 		+ " relacionamento entre o comércio e o cliente, de forma prática, segura e com\n"
-		+ " distanciamento social.\n\n\n"
-		+ "                              Todos os Direitos Reservados © Gabriel Mendes",
+		+ " distanciamento social.\n\n"
+		+ " Projeto: https://github.com/Biellms/ProjetoIntegrador-Padafood\n\n\n\n"
+		+ "                            © 2022 Gabriel Mendes | Todos os Direitos Reservados",
 
 		"Informações", JOptionPane.INFORMATION_MESSAGE);
 		Main.Menu();

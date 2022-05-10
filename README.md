@@ -54,6 +54,7 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 - Java (Linguagem)
 - Visual Studio Code (IDE)
 - Figma (Editor gráfico)
+- Trello (Gerenciador de projetos)
 
 - Brainstorming (Dinâmica de grupo)
 

@@ -46,7 +46,7 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 - <a href="https://www.figma.com/proto/mWN4i7eqHWmI02T7pFGEC4/PADOC%40-TOP-cliente?node-id=422%3A835&scaling=scale-down&page-id=0%3A1" target="_blank"><p target="_blank">Protótipo Cliente</a>
 - <a href="https://www.figma.com/proto/joR9dtuyvvFFLP75K7UfW7/PADOC%40-TOP-funcionario?scaling=scale-down&page-id=0%3A1&node-id=1426%3A0" target="_blank"><p target="_blank">Protótipo Comércio</a>
 
-> ##### Seguindo a mesma temática do projeto integrador do [2º Semestre](https://github.com/Biellms/ProjetoIntegrador-DeliveryC), o protótipo foi reutilizado como principal conceito de interface.
+> ##### Seguindo a mesma temática do projeto integrador do [2º Semestre](https://github.com/Biellms/ProjetoIntegrador-DeliveryC), o protótipo foi reutilizado como principal conceito de interface, mudando apenas sua logomarca.
 
 #
 

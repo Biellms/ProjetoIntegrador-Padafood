@@ -65,10 +65,10 @@ public class Main {
 		// Alterando Fonte do JOptionPane
 		UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.BOLD , 14)));
 		
-		// Gif no JOptionPane
-		final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
+		// // Gif no JOptionPane
+		// final ImageIcon icon = new ImageIcon(new URL("https://i.imgur.com/5tyVfiF.gif"));
 		
-		JOptionPane.showMessageDialog(null,null,"START", JOptionPane.INFORMATION_MESSAGE, icon);
+		// JOptionPane.showMessageDialog(null,null,"START", JOptionPane.INFORMATION_MESSAGE, icon);
 		JOptionPane.showMessageDialog(null,
 			"\n --------------------------------------\n"
 			+ " BEM-VINDO AO PADAFOOD"

@@ -47,17 +47,56 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 import javax.swing.*;
 
 JOptionPane.showMessageDialog(null,
-			"\n --------------------------------------\n"
-			+ " BEM-VINDO AO PADAFOOD"
-			+ "\n --------------------------------------",
-        "BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
+  "\n --------------------------------------\n"
+  + " BEM-VINDO AO PADAFOOD"
+  + "\n --------------------------------------",
+    "BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
 ```
 - Verificação de login e cadastro usuário
 ```java
+[...]
 if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
 		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!    ");
 			MenuUsuario.Menu(); // Retorna Menu Usuário
 		}
+[...]
+```
+- Cadastro de Produtos
+```java
+[...]
+String nome = JOptionPane.showInputDialog(" CADASTRAR PRODUTO\n\n Nome: ");
+double preco = Double.parseDouble(JOptionPane.showInputDialog(" CADASTRAR PRODUTO\n\n Preço:"));
+  produto.add(new ProdutoClass(nome, preco)); // Adiciona produto
+[...]
+```
+- Carrinho de Compras
+```java
+[...]
+carrinho.add(produto.get(op)); // Adiciona ao carrinho
+  JOptionPane.showMessageDialog(null,
+  " '"+produto.get(op).getNome()+"' Adicionado ao Carrinho!");
+[...]
+```
+- Método de Pagamento
+```java
+[...]
+try {
+  int op = Integer.parseInt(JOptionPane.showInputDialog(
+    " ------------------------------------------------- \n"
+    + " Selecione a Forma de Pagamento:    \n\n"
+    + " 1) Pagar na Entrega\n"
+    + " 2) Pagar no Aplicativo\n"
+    + " ------------------------------------------------- \n"
+    + " 3) Voltar\n\n"
+    + " Opção"));
+
+    switch (op) {
+      case 1: CartaoClass.entrega(); Finalizar(); break; // Pag Entrega
+      case 2: CartaoClass.cadastro(); break; // Pag Aplicativo
+      case 3: Menu();
+      default: Adicionar(); break;
+    }
+  } [...]
 ```
 
 #

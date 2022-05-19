@@ -76,7 +76,7 @@ public class EstoqueCarrinho {
                 MenuCliente.Menu();
             } else {
                 op -= 1;
-                carrinho.add(produto.get(op));
+                carrinho.add(produto.get(op)); // ADICIONA AO CARRINHO
                 JOptionPane.showMessageDialog(null, 
                 " '"+produto.get(op).getNome()+"' Adicionado ao Carrinho!");
                 MenuCliente.Menu();

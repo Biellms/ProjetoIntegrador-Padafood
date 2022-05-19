@@ -43,21 +43,20 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 
 ### **Resultados** 🖥️
 - Interface utilizando JOptionPane
-```
+```java
 import javax.swing.*;
 
 JOptionPane.showMessageDialog(null,
 			"\n --------------------------------------\n"
 			+ " BEM-VINDO AO PADAFOOD"
-			+ "\n --------------------------------------","BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
+			+ "\n --------------------------------------",
+        "BEM-VINDO", JOptionPane.INFORMATION_MESSAGE);
 ```
 - Verificação de login e cadastro usuário
-```
+```java
 if (a.equals(getEmail()) && b.equals(getSenha()) ) {	// Compara Strings
 		JOptionPane.showMessageDialog(null,"\n Seja Bem-Vindo "+getNome()+"!!    ");
-
-			MenuCliente.Menu(); // RETORNAR MENU CLIENTE
-
+			MenuUsuario.Menu(); // Retorna Menu Usuário
 		}
 ```
 

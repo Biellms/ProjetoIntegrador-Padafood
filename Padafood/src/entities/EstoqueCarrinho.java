@@ -77,6 +77,8 @@ public class EstoqueCarrinho {
             } else {
                 op -= 1;
                 carrinho.add(produto.get(op));
+                JOptionPane.showMessageDialog(null, 
+                " '"+produto.get(op).getNome()+"' Adicionado ao Carrinho!");
                 MenuCliente.Menu();
             }
         } catch (NumberFormatException e) {

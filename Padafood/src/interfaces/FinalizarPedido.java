@@ -106,7 +106,7 @@ public class FinalizarPedido {
                 + " Opção:"));
 
             if (op == 1) {
-                JOptionPane.showMessageDialog(null, " PEDIDO PROCESSADO COM SUCESSO!");
+                JOptionPane.showMessageDialog(null, " PEDIDO FOI PROCESSADO COM SUCESSO!");
                 MenuCliente.Menu();
             } else {
                 Menu();

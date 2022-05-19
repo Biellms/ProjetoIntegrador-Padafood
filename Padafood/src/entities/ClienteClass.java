@@ -68,7 +68,7 @@ public class ClienteClass {
 	}
 		
 	public static void print() {
-		JOptionPane.showMessageDialog(null,"\n -------------------------------------------\n"
+		JOptionPane.showMessageDialog(null," -------------------------------------------\n"
 			+ " INFORMAÇÕES CLIENTE\n ------------------------------------------- "
 			+ "\n Nome: "+getNome()+""
 			+ "\n Email: "+getEmail()+""

@@ -93,7 +93,8 @@ public class FinalizarPedido {
 
         try {
             int op = Integer.parseInt(JOptionPane.showInputDialog(
-                " -------------------------------------------------------------- \n"
+                "                   CONFIRME O PEDIDO\n"
+                + " -------------------------------------------------------------- \n"
                 + EstoqueCarrinho.verCarrinho()
                 + " -------------------------------------------------------------- \n"
                 + CartaoClass.print()
@@ -119,5 +120,9 @@ public class FinalizarPedido {
 
                 Confirmar(); // RETORNA MÉTODO CONFIRMAR
         }  
+    }
+
+    public static void main(String[] args) {
+        Confirmar();
     }
 }

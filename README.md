@@ -125,5 +125,6 @@ try {
 - Guilherme Rodrigues |  <a href="https://www.linkedin.com/in/guilhermedev/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/GuilhermeRodriguesSantos?tab=repositories" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>
 - Caroline Ramos |  <a href="https://www.linkedin.com/in/caroline-ramos-345654168/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/Carol-Ramos" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>
 - Luan Costa |  <a href="https://www.linkedin.com/in/luan-costa-b34106121/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/LuanC-1" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>
-
 - Jorge Lucas | <a href="https://www.linkedin.com/in/jorge-lucas-8a6160181/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="jorgelucastanan@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Email-gray" target="_blank"></a>
+
+- Mateus Almeida | <a href="https://www.linkedin.com/in/mateus-almeida-silva-7a5563b8/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/Mateeus10" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>

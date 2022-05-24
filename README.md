@@ -34,6 +34,18 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 | **Categoria**            | É um sistema de catálogo e vendas de produtos, que ajudará o comerciante a compartilhar seus produtos para seus clientes de forma online. |
 | **Oferece**            | Ajuda de forma simples e eficaz a compra de alimentos e produtos de forma online e de graça, deixando a vida do usuário mais prática, álem de fazer o controle de entrada e saída da própria padaria. |
 
+#
+
+<div align = "center">
+
+  <h3><b>Fluxograma</b>
+
+  </br>
+
+  <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-Padafood/blob/main/Documentação/Fluxograma.jpg"/>
+
+  </div>
+
 <h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/tree/main/Padafood" target="_blank"><p target="_blank">• Código Desenvolvido 📝</a></b></h3>
 
 <h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/blob/main/Documentação/Padafood%20%26%20Anexos.pdf" target="_blank"><p target="blank">• Artigo 📄</a></b></h3>

@@ -17,7 +17,7 @@
   <h3><b>Resumo</b></h3>
   </div>
   
-O artigo apresenta o desenvolvimento e elaboração de um aplicativo em linguagem Java, no qual a problemática são as dificuldades financeiras das padarias com baixa renda, em relação aos seus prejuízos por não terem um meio de compartilhamento e distribuição de seus produtos. Para a solução, o desenvolvimento de um aplicativo da qual a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor relacionamento entre o comércio e o cliente, de forma prática, segura e com distanciamento social. o aplicativo será gratuito para todas as padarias de pequeno e médio porte.
+O artigo apresenta o desenvolvimento e elaboração de um software em linguagem Java, no qual a problemática são as dificuldades financeiras das padarias com baixa renda, em relação aos seus prejuízos por não terem um meio de compartilhamento e distribuição de seus produtos. Para a solução, o desenvolvimento de um aplicativo da qual a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente consiga ver os seus produtos de forma clara e fácil. Resultando em um melhor relacionamento entre o comércio e o cliente, de forma prática, segura e com distanciamento social. o aplicativo será gratuito para todas as padarias de pequeno e médio porte.
 
 #
 

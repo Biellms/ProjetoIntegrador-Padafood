@@ -39,7 +39,8 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 <div align = "center">
 
   <h3><b>Fluxograma</b>
-
+	  
+  </br>
   </br>
 
   <img width="1000px" src="https://github.com/Biellms/ProjetoIntegrador-Padafood/blob/main/Documentação/Fluxograma.jpg"/>

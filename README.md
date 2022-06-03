@@ -49,7 +49,7 @@ Para tal problemática, foi desenvolvido um levantamento da declaração do prod
 
 <h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/tree/main/Padafood" target="_blank"><p target="_blank">• Código Desenvolvido 📝</a></b></h3>
 
-<h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/blob/main/Documentação/Padafood%20%26%20Anexos.pdf" target="_blank"><p target="blank">• Artigo 📄</a></b></h3>
+<h4><b><a href="https://github.com/Biellms/ProjetoIntegrador-Padafood/blob/main/Documentação/Padafood.pdf" target="_blank"><p target="blank">• Artigo 📄</a></b></h3>
 
 #
 
